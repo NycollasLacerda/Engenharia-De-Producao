@@ -1,55 +1,108 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <title>Contato</title>
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Contato - Barbearia Alura</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-  <header>
-    <img src="logo.png" alt="Logo Engenharia de Produção" width="100">
-    <h1>Fale Conosco</h1>
-    <nav>
-      <a href="index.html">Início</a>
-      <a href="produtos.html">Serviços</a>
-      <a href="contato.html">Contato</a>
-    </nav>
-  </header>
+<body>
+    <header>
+        <div class="caixa">
+            <h1><img src="img/logo.png" alt="Logo da Barbearia Alura"></h1>
 
-  <main>
-    
-    <section>
-  <h3>Informações da Empresa</h3>
-  <p><strong>Endereço:</strong> Av. Pref. Dr. Roque Vernalha - Bairro Centro </p>
-  <p><strong>Cidade:</strong> Matinhos - PR</p>
-  <p><strong>CEP:</strong> 83260-000</p>
-  <p><strong>Telefone:</strong> (11) 4002-8922</p>
-  <p><strong>Email:</strong> contato@NGengenhariaproducao.com</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <p>
-    <iframe
-    <a href="https://www.google.com/maps?q=Av.+Pref.+Dr.+Roque+Vernalha,+100,+Matinhos+-+PR,+83260-000&output=embed">
-      📍 Ver no Google Maps
-    <iframe
-    </a>
-  </p>
+    <main>
+        <form>
+            <label for="nomesobrenome">Nome e sobrenome</label>
+            <input type="text" id="nomesobrenome" class="input-padrao" required>
 
-  <iframe
-    src="https://www.google.com/maps?q=Av.+Pref.+Dr.+Roque+Vernalha,+100,+Matinhos+-+PR,+83260-000&output=embed"
-    width="100%"
-    height="300"
-    style="border:0; margin-top: 20px;"
-    allowfullscreen=""
-    loading="lazy"
-  ></iframe>
-</section>
-      </main>
+            <label for="email">Email</label>
+            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
 
-  <footer>
-    <p>&copy; 2025 Engenharia de Produção</p>
-  </footer>
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+            <fieldset>
+                <legend>Como prefere o nosso contato?</legend>
+                <label for="radio-email">
+                    <input type="radio" name="contato" value="email" id="radio-email">
+                    Email
+                </label>
+
+                <label for="radio-telefone">
+                    <input type="radio" name="contato" value="telefone" id="radio-telefone">
+                    Telefone
+                </label>
+
+                <label for="radio-whatsapp">
+                    <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>
+                    WhatsApp
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Qual horário prefere ser atendido?</legend>
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox">
+                <input type="checkbox" checked>
+                Gostaria de receber nossas novidades por email?
+            </label>
+
+            <input type="submit" value="Enviar formulário" class="enviar">
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <img src="img/logo-branco.png" alt="Logo da Barbearia Alura">
+        <p class="copyright">&copy; Copyright Barbearia Alura - 2025</p>
+    </footer>
 </body>
+
 </html>
 
 
