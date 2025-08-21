@@ -3,7 +3,7 @@ body {
 }
 
 header {
-    background: #BBBBBB;
+    background: #030185;
     padding: 20px 0;
 }
 
@@ -20,7 +20,7 @@ header {
 
 .principal {
     padding: 3em 0;
-    background: #FEFEFE;
+    background: #1d1aad;
     width: 940px;
     margin: 0 auto;
 }
@@ -73,7 +73,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #C78C19;
+    color: #ff0000;
     text-decoration: underline;
 }
 
@@ -96,11 +96,11 @@ nav a:hover {
 }
 
 .produtos li:hover {
-    border-color: #C78C19;
+    border-color: #c71919;
 }
 
 .produtos li:active {
-    border-color: #088C19;
+    border-color: #8c0808;
 }
 
 .produtos h2 {
